@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/net/codejava/Calculator.java=UTF-8
+encoding//src/net/codejava/CalculatorPortBindingImpl.java=UTF-8
+encoding//src/net/codejava/CalculatorPortBindingSkeleton.java=UTF-8
+encoding//src/net/codejava/CalculatorPortBindingStub.java=UTF-8
+encoding//src/net/codejava/CalculatorService.java=UTF-8
+encoding//src/net/codejava/CalculatorServiceLocator.java=UTF-8
