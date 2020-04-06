@@ -22,7 +22,7 @@ public class CalculatorServiceLocator extends org.apache.axis.client.Service imp
     }
 
     // Use to get a proxy class for CalculatorPort
-    private java.lang.String CalculatorPort_address = "http://localhost:8080/CalculatorService/ws/calculator";
+    private java.lang.String CalculatorPort_address = "http://localhost:8080/TopDownCalculator/services/CalculatorPort";
 
     public java.lang.String getCalculatorPortAddress() {
         return CalculatorPort_address;
@@ -52,7 +52,7 @@ public class CalculatorServiceLocator extends org.apache.axis.client.Service imp
 
     public net.codejava.Calculator getCalculatorPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            net.codejava.CalculatorPortBindingStub _stub = new net.codejava.CalculatorPortBindingStub(portAddress, this);
+            net.codejava.CalculatorPortSoapBindingStub _stub = new net.codejava.CalculatorPortSoapBindingStub(portAddress, this);
             _stub.setPortName(getCalculatorPortWSDDServiceName());
             return _stub;
         }
@@ -73,7 +73,7 @@ public class CalculatorServiceLocator extends org.apache.axis.client.Service imp
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
             if (net.codejava.Calculator.class.isAssignableFrom(serviceEndpointInterface)) {
-                net.codejava.CalculatorPortBindingStub _stub = new net.codejava.CalculatorPortBindingStub(new java.net.URL(CalculatorPort_address), this);
+                net.codejava.CalculatorPortSoapBindingStub _stub = new net.codejava.CalculatorPortSoapBindingStub(new java.net.URL(CalculatorPort_address), this);
                 _stub.setPortName(getCalculatorPortWSDDServiceName());
                 return _stub;
             }

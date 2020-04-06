@@ -4,7 +4,7 @@
   <artifactId>CalculatorClient</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-      <dependencies>
+          <dependencies>
 <dependency>
    <groupId>javax.xml</groupId>
    <artifactId>jaxrpc-api</artifactId>

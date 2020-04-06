@@ -6,3 +6,8 @@ in .m2 folder
 Alternatief:
 Projec>runass>maven>install
 JDK 14
+
+Eerst Tomcat configureren voor project. 
+Windows>preferences>server>Installed Runtime
+
+Stel poorten in voor het runnen van de service
