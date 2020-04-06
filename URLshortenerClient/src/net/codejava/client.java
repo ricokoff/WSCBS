@@ -118,6 +118,7 @@ public class client {
     	     scanner.close();
     	     }
     	}	
+    out.println("Client has terminated!");
     }
 }
 
