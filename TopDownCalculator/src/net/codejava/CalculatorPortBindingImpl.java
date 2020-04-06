@@ -8,19 +8,19 @@
 package net.codejava;
 
 public class CalculatorPortBindingImpl implements net.codejava.Calculator{
-    public int add(int arg0, int arg1) throws java.rmi.RemoteException {
+    public double add(double arg0, double arg1) throws java.rmi.RemoteException {
         return arg0+arg1;
     }
 
-    public int sub(int arg0, int arg1) throws java.rmi.RemoteException {
+    public double sub(double arg0, double arg1) throws java.rmi.RemoteException {
         return arg0-arg1;
     }
 
-    public int div(int arg0, int arg1) throws java.rmi.RemoteException {
+    public double div(double arg0, double arg1) throws java.rmi.RemoteException {
         return arg0/arg1;
     }
 
-    public int mul(int arg0, int arg1) throws java.rmi.RemoteException {
+    public double mul(double arg0, double arg1) throws java.rmi.RemoteException {
         return arg0*arg1;
     }
 

@@ -5,57 +5,57 @@
   
   <message name="add">
     
-    <part name="arg0" type="xsd:int"/>
+    <part name="arg0" type="xsd:double"/>
     
-    <part name="arg1" type="xsd:int"/>
+    <part name="arg1" type="xsd:double"/>
     
   </message>
   
   <message name="addResponse">
     
-    <part name="return" type="xsd:int"/>
+    <part name="return" type="xsd:double"/>
     
   </message>
   
   <message name="sub">
     
-    <part name="arg0" type="xsd:int"/>
+    <part name="arg0" type="xsd:double"/>
     
-    <part name="arg1" type="xsd:int"/>
+    <part name="arg1" type="xsd:double"/>
     
   </message>
   
   <message name="subResponse">
     
-    <part name="return" type="xsd:int"/>
+    <part name="return" type="xsd:double"/>
     
   </message>
   
   <message name="div">
     
-    <part name="arg0" type="xsd:int"/>
+    <part name="arg0" type="xsd:double"/>
     
-    <part name="arg1" type="xsd:int"/>
+    <part name="arg1" type="xsd:double"/>
     
   </message>
   
   <message name="divResponse">
     
-    <part name="return" type="xsd:int"/>
+    <part name="return" type="xsd:double"/>
     
   </message>
   
   <message name="mul">
     
-    <part name="arg0" type="xsd:int"/>
+    <part name="arg0" type="xsd:double"/>
     
-    <part name="arg1" type="xsd:int"/>
+    <part name="arg1" type="xsd:double"/>
     
   </message>
   
   <message name="mulResponse">
     
-    <part name="return" type="xsd:int"/>
+    <part name="return" type="xsd:double"/>
     
   </message>
   

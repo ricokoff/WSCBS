@@ -10,22 +10,22 @@ import javax.jws.soap.SOAPBinding.Style;
 public class Calculator {
 	
 	@WebMethod
-	public int add(int n1, int n2) {
+	public double add(double n1, double n2) {
 		return n1 + n2;
 	}
 	
 	@WebMethod
-	public int mul(int n1, int n2) {
+	public double mul(double n1, double n2) {
 		return n1*n2;
 	}
 	
 	@WebMethod
-	public int sub(int n1, int n2) {
+	public double sub(double n1, double n2) {
 		return n1-n2;
 	}
 	
 	@WebMethod
-	public int div(int n1, int n2) {
+	public double div(double n1, double n2) {
 		return n1/n2;
 	}
 	
