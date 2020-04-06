@@ -1,0 +1,8 @@
+Uitleg ClassNotFound
+Right click your eclipse project Properties -> Deployment Assembly -> Add -> Java Build Path Entries -> Gradle Dependencies -> Finish.
+
+xml-1.3.4.jar for missing artifact
+in .m2 folder
+Alternatief:
+Projec>runass>maven>install
+JDK 14
