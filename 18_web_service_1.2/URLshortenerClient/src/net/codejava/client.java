@@ -14,8 +14,8 @@ import javax.ws.rs.core.MediaType;
 import org.glassfish.jersey.client.ClientConfig;
 public class client {
 
-    static String uri2 = "http://localhost:8080/RESTcalculator/rest/shortener";
-    static String uri = "http://localhost:8080/RESTURLshortener/rest/shortener";
+    String uri2 = "http://localhost:8080/RESTcalculator/rest/shortener";
+    String uri = "http://localhost:8080/RESTURLshortener/rest/shortener";
     static ClientConfig config = new ClientConfig();
     static Client client = ClientBuilder.newClient(config);
 	static boolean isKilled = false;
