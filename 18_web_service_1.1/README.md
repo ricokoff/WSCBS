@@ -16,3 +16,6 @@ http://localhost:8080/TopDownCalculator/services/CalculatorPort
 The top-down SOAP client is located in TopDownClient.
 After running the service, the service can be located at:
 http://localhost:8081/TopDownClient/sampleCalculatorProxy/TestClient.jsp
+
+NOTE:
+In Eclipse it seems like there are errors in some of the projects. These errors are not in the java code, and the services will just run fine. Just follow the instructions described above and everything should be working correctly.
