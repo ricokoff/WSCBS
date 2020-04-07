@@ -4,7 +4,7 @@ Welcome to group 18 of Web Service and Cloud Based Systems 2020. We implemented 
 
 ## Prerequisities ##
 
-To be able to run our implementations, some basic packages and programs are needed. We used the following settings:
+To be able to run our implementations, some basic packages and programs are needed. Apart from running it on Windows 10, we used the following settings:
 
 ### JDK 14 ###
 We used Java Development Kit 14 to develop and run our programs. This JDK can be downloaded [here](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html).
@@ -22,4 +22,10 @@ Please come back to this section if you ever run into troubles while running our
 ### PORT already in use or invalid PORT ###
 When you run a service, you will run it on the port that you specify at the server settings. This is port is 8080 by default. When you make 2 servers for 2 services, both will have the same port by default. This also holds when one of the services is a client. Our services assume that the Service Ports are 8080 and the Client ports are 8081. However you can choose whatever port you prefer. To edit your port settings go to "Servers" (Window > Show View > Other > Server > Servers), dubbelclick on the TomCat server where your service is in and go to the "ports" field. Change **BOTH** the admin port and the HTTP/1.1 port. It doesn't matter to which port you change it, as long as the port is not used by any other process. 
 
+### ClassNotFound Exception ###
+When running the server you could get an ClassNotFound exception. We found the following fix that solved this problem.
+Right click your eclipse project and select Properties -> Deployment Assembly -> Add -> Java Build Path Entries -> Maven Dependencies -> Finish.
+
+### Missing Artifact ###
+We don't know why, but we got a missing artifact error for the xml-1.3.4.jar. Now there are 2 ways to solve this problem. First you can right click on the project and select Run ass > Maven install. This will check which jars are needed, as defined in the dependencies of the pom.xml file, and try to download the missing jars. If this solution does not work, we also included the xml-1.3.4.jar in this folder. You can put this jar in the following folder: User/{yourUserAccount}/.m2/repository/javax/xml/1.3.4. After adding the jar, try to reload your project. 
 
