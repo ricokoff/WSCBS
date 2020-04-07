@@ -1,3 +1,6 @@
 # WSCBS REST
+For both the REST URL shortener and the corresponding client, we made a seperate project folder. To get them running, import the projects as maven projects. Eclipse might say that there are errors in the project, but these errors are not in the java files. You should be able to run the service/client without any problems. Make sure you have a "Servers" tab in the menu by navigating to  Window > Show View > Other > Server and dubbelclicking servers. From here you can create a new server for the URLshortenerService by rightclicking in the window and selecting new > server. You can then select TomCat v9.0 and click next. Add the URLshortenerService and click finish. The default ports are 8080 for HTTP/1.1 and 8005 for the admin port. Our client uses "http://localhost:8080/RESTURLshortener/rest/shortener" to connect to the service URL. You can always change the port of the service if you also change this in the client file. 
 
-The REST URL shortener can be tested inside eclipse with the UrlClient.
+## Running the client ##
+If you ran the service as described in the previous step, you can easily run the client by running the client.java file. This file is located in the src.net.codejava folder. This program will present you with an interactive terminal and explain you how to use it. You can always exit this program by using the exit command. For testing, you can use all the commands as described in the assignment. These should return the expected responses. 
+
